@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#008080" />
+      <stop offset="100%" stop-color="#1a365d" />
+    </linearGradient>
+    <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#e2e8f0" stop-opacity="0.8" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <!-- Background Circle -->
+  <circle cx="200" cy="200" r="200" fill="url(#bgGrad)" />
+  <!-- Inner ring accent -->
+  <circle cx="200" cy="200" r="190" fill="none" stroke="#ffffff" stroke-opacity="0.15" stroke-width="4" />
+  
+  <g filter="url(#shadow)">
+    <!-- Head -->
+    <circle cx="200" cy="155" r="62" fill="url(#avatarGrad)" />
+    <!-- Neck -->
+    <path d="M182 205 L218 205 L222 235 L178 235 Z" fill="url(#avatarGrad)" opacity="0.9" />
+    <!-- Body / Shoulders -->
+    <path d="M110 350 C110 270 145 235 200 235 C255 235 290 270 290 350 Z" fill="url(#avatarGrad)" />
+    <!-- Shirt Collar Notch Detail -->
+    <path d="M185 235 L200 260 L215 235 Z" fill="#008080" opacity="0.3" />
+  </g>
+  <!-- Modern geometric corner accents -->
+  <circle cx="70" cy="90" r="8" fill="#5eead4" opacity="0.6" />
+  <circle cx="330" cy="120" r="12" fill="#38bdf8" opacity="0.4" />
+  <circle cx="320" cy="290" r="6" fill="#a7f3d0" opacity="0.5" />
+</svg>

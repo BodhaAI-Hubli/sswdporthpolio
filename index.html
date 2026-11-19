@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alex Morgan | BCA Student & Aspiring Front-End Developer</title>
+  <meta name="description" content="Portfolio of Alex Morgan - Third-year BCA student and aspiring front-end developer skilled in HTML, CSS, JavaScript, and Bootstrap.">
+  
+  <!-- Bootstrap CSS 5.3.3 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <!-- Bootstrap Icons 1.11.3 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#menu" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
+
+  <!-- Header & Fixed Navigation -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top shadow-sm" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+          <i class="bi bi-code-slash fs-4" aria-hidden="true"></i>
+          <span>Alex Morgan</span>
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+              <button id="themeToggleBtn" class="btn btn-outline-secondary btn-sm rounded-circle d-flex align-items-center justify-content-center p-2" type="button" aria-label="Switch to dark theme" title="Toggle theme">
+                <i id="themeIcon" class="bi bi-moon-fill" aria-hidden="true"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content Area -->
+  <main>
+    <!-- 1. Hero Section (#home) -->
+    <section id="home" class="d-flex align-items-center">
+      <div class="container py-5">
+        <div class="row align-items-center gy-5">
+          <div class="col-md-6 text-center">
+            <div class="hero-avatar-wrapper">
+              <img src="images/avatar.svg" alt="Portrait illustration of Alex Morgan" class="hero-avatar img-fluid" width="320" height="320">
+            </div>
+          </div>
+          <div class="col-md-6 text-center text-md-start">
+            <span class="badge bg-secondary-subtle text-secondary-emphasis mb-2 px-3 py-2 rounded-pill">Welcome to my portfolio</span>
+            <h1 class="display-4 fw-bold mb-2">Alex Morgan</h1>
+            <p class="lead text-primary fw-semibold mb-3">BCA Student &amp; Aspiring Front-End Developer</p>
+            <p class="fs-5 text-body-secondary mb-4">I build clean, responsive websites and love turning ideas into interactive experiences.</p>
+            <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-md-start">
+              <a href="#projects" class="btn btn-primary btn-lg px-4 shadow-sm">
+                <i class="bi bi-grid-fill me-2" aria-hidden="true"></i>View Projects
+              </a>
+              <a href="#contact" class="btn btn-outline-primary btn-lg px-4">
+                <i class="bi bi-envelope-fill me-2" aria-hidden="true"></i>Contact Me
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. About Section (#about) -->
+    <section id="about" class="bg-body-secondary">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2 class="section-title">About Me</h2>
+        </div>
+        <div class="row align-items-center gy-4">
+          <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm p-4 bg-body">
+              <h3 class="h4 fw-bold mb-3">My Journey</h3>
+              <p class="text-body-secondary mb-0 leading-relaxed">
+                I am a third-year Bachelor of Computer Applications student passionate about web development and user-friendly design. I have built several responsive projects using HTML, CSS, JavaScript and Bootstrap, and I am currently exploring React and UI/UX design. My goal is to start a career as a front-end developer and keep learning every day.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm p-4 bg-body">
+              <h3 class="h4 fw-bold mb-3">Quick Facts</h3>
+              <ul class="list-group list-group-flush rounded-3">
+                <li class="list-group-item d-flex align-items-center px-0 py-3 bg-transparent">
+                  <div class="text-primary me-3 fs-5" aria-hidden="true">
+                    <i class="bi bi-mortarboard"></i>
+                  </div>
+                  <div>
+                    <span class="text-body-secondary small d-block">Degree</span>
+                    <strong>BCA</strong>
+                  </div>
+                </li>
+                <li class="list-group-item d-flex align-items-center px-0 py-3 bg-transparent">
+                  <div class="text-primary me-3 fs-5" aria-hidden="true">
+                    <i class="bi bi-building"></i>
+                  </div>
+                  <div>
+                    <span class="text-body-secondary small d-block">University</span>
+                    <strong>Sample University</strong>
+                  </div>
+                </li>
+                <li class="list-group-item d-flex align-items-center px-0 py-3 bg-transparent">
+                  <div class="text-primary me-3 fs-5" aria-hidden="true">
+                    <i class="bi bi-translate"></i>
+                  </div>
+                  <div>
+                    <span class="text-body-secondary small d-block">Languages</span>
+                    <strong>English, Hindi, Kannada</strong>
+                  </div>
+                </li>
+                <li class="list-group-item d-flex align-items-center px-0 py-3 bg-transparent">
+                  <div class="text-primary me-3 fs-5" aria-hidden="true">
+                    <i class="bi bi-geo-alt"></i>
+                  </div>
+                  <div>
+                    <span class="text-body-secondary small d-block">Location</span>
+                    <strong>India</strong>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Skills Section (#skills) -->
+    <section id="skills">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2 class="section-title">Technical Skills</h2>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-8">
+            <div class="card border-0 shadow-sm p-4 mb-4 bg-body">
+              <h3 class="h4 fw-bold mb-4">Core Competencies</h3>
+              
+              <!-- Skill: HTML -->
+              <div class="mb-3">
+                <div class="d-flex justify-content-between mb-1">
+                  <span class="fw-semibold">HTML</span>
+                  <span class="text-body-secondary">90%</span>
+                </div>
+                <div class="progress" role="progressbar" aria-label="HTML Skill Level" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar bg-danger" style="width: 90%;">90%</div>
+                </div>
+              </div>
+
+              <!-- Skill: CSS -->
+              <div class="mb-3">
+                <div class="d-flex justify-content-between mb-1">
+                  <span class="fw-semibold">CSS</span>
+                  <span class="text-body-secondary">85%</span>
+                </div>
+                <div class="progress" role="progressbar" aria-label="CSS Skill Level" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar bg-primary" style="width: 85%;">85%</div>
+                </div>
+              </div>
+
+              <!-- Skill: JavaScript -->
+              <div class="mb-3">
+                <div class="d-flex justify-content-between mb-1">
+                  <span class="fw-semibold">JavaScript</span>
+                  <span class="text-body-secondary">75%</span>
+                </div>
+                <div class="progress" role="progressbar" aria-label="JavaScript Skill Level" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar bg-warning text-dark" style="width: 75%;">75%</div>
+                </div>
+              </div>
+
+              <!-- Skill: Bootstrap -->
+              <div class="mb-2">
+                <div class="d-flex justify-content-between mb-1">
+                  <span class="fw-semibold">Bootstrap</span>
+                  <span class="text-body-secondary">90%</span>
+                </div>
+                <div class="progress" role="progressbar" aria-label="Bootstrap Skill Level" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar bg-success" style="width: 90%;">90%</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tool Badges -->
+            <div class="card border-0 shadow-sm p-4 bg-body text-center">
+              <h3 class="h5 fw-bold mb-3">Tools &amp; Methodologies</h3>
+              <div class="d-flex flex-wrap gap-2 justify-content-center">
+                <span class="badge text-bg-dark fs-6 px-3 py-2"><i class="bi bi-git me-1" aria-hidden="true"></i>Git</span>
+                <span class="badge text-bg-primary fs-6 px-3 py-2"><i class="bi bi-code-square me-1" aria-hidden="true"></i>VS Code</span>
+                <span class="badge text-bg-info fs-6 px-3 py-2"><i class="bi bi-vector-pen me-1" aria-hidden="true"></i>Figma</span>
+                <span class="badge text-bg-secondary fs-6 px-3 py-2"><i class="bi bi-display me-1" aria-hidden="true"></i>Responsive Web Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Projects Section (#projects) -->
+    <section id="projects" class="bg-body-secondary">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="text-body-secondary max-w-700 mx-auto">Explore some of the responsive applications, UI designs, and tools I have developed.</p>
+        </div>
+        <div class="row g-4">
+          <!-- Project 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 project-card bg-body">
+              <img src="images/project1.svg" class="card-img-top" alt="Preview of Personal Portfolio project">
+              <div class="card-body d-flex flex-column">
+                <div class="mb-2">
+                  <span class="badge bg-danger-subtle text-danger-emphasis">HTML</span>
+                  <span class="badge bg-success-subtle text-success-emphasis">Bootstrap</span>
+                </div>
+                <h3 class="card-title h5 fw-bold">Personal Portfolio</h3>
+                <p class="card-text text-body-secondary flex-grow-1">Responsive portfolio built with Bootstrap 5.</p>
+                <button type="button" class="btn btn-outline-primary mt-3 w-100" data-bs-toggle="modal" data-bs-target="#projModal" data-title="Personal Portfolio" data-desc="A modern, highly responsive personal portfolio website showcasing web development projects, technical skills, and educational qualifications. Built using Bootstrap 5 utility classes and components, custom CSS variables, and accessible semantic HTML5. Features an interactive in-browser live editor and theme switcher.">
+                  <i class="bi bi-eye me-1" aria-hidden="true"></i>View Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 project-card bg-body">
+              <img src="images/project2.svg" class="card-img-top" alt="Preview of Weather App project">
+              <div class="card-body d-flex flex-column">
+                <div class="mb-2">
+                  <span class="badge bg-warning-subtle text-warning-emphasis">JavaScript</span>
+                  <span class="badge bg-info-subtle text-info-emphasis">API</span>
+                </div>
+                <h3 class="card-title h5 fw-bold">Weather App</h3>
+                <p class="card-text text-body-secondary flex-grow-1">Live weather lookup using a public API.</p>
+                <button type="button" class="btn btn-outline-primary mt-3 w-100" data-bs-toggle="modal" data-bs-target="#projModal" data-title="Weather App" data-desc="A sleek weather dashboard application that fetches real-time meteorological conditions and five-day forecasts using a public REST API. Demonstrates asynchronous JavaScript, DOM manipulation, dynamic SVG icon updates, and responsive layout styling.">
+                  <i class="bi bi-eye me-1" aria-hidden="true"></i>View Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 project-card bg-body">
+              <img src="images/project3.svg" class="card-img-top" alt="Preview of To-Do List project">
+              <div class="card-body d-flex flex-column">
+                <div class="mb-2">
+                  <span class="badge bg-warning-subtle text-warning-emphasis">JavaScript</span>
+                  <span class="badge bg-primary-subtle text-primary-emphasis">UI</span>
+                </div>
+                <h3 class="card-title h5 fw-bold">To-Do List</h3>
+                <p class="card-text text-body-secondary flex-grow-1">Add, complete and delete tasks with saved state.</p>
+                <button type="button" class="btn btn-outline-primary mt-3 w-100" data-bs-toggle="modal" data-bs-target="#projModal" data-title="To-Do List" data-desc="An intuitive productivity web application allowing users to organize daily priorities with full CRUD functionality. Features persistent client-side storage with localStorage, animated task completion badges, and interactive category filters.">
+                  <i class="bi bi-eye me-1" aria-hidden="true"></i>View Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 project-card bg-body">
+              <img src="images/project4.svg" class="card-img-top" alt="Preview of Landing Page project">
+              <div class="card-body d-flex flex-column">
+                <div class="mb-2">
+                  <span class="badge bg-primary-subtle text-primary-emphasis">CSS</span>
+                  <span class="badge bg-secondary-subtle text-secondary-emphasis">Design</span>
+                </div>
+                <h3 class="card-title h5 fw-bold">Landing Page</h3>
+                <p class="card-text text-body-secondary flex-grow-1">Marketing page for a fictional product.</p>
+                <button type="button" class="btn btn-outline-primary mt-3 w-100" data-bs-toggle="modal" data-bs-target="#projModal" data-title="Landing Page" data-desc="A high-conversion marketing landing page designed for a modern digital software product. Highlights key benefits with engaging call-to-action sections, responsive grid cards, customer testimonials, and smooth micro-interactions.">
+                  <i class="bi bi-eye me-1" aria-hidden="true"></i>View Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 project-card bg-body">
+              <img src="images/project5.svg" class="card-img-top" alt="Preview of Quiz App project">
+              <div class="card-body d-flex flex-column">
+                <div class="mb-2">
+                  <span class="badge bg-warning-subtle text-warning-emphasis">JavaScript</span>
+                  <span class="badge bg-danger-subtle text-danger-emphasis">Logic</span>
+                </div>
+                <h3 class="card-title h5 fw-bold">Quiz App</h3>
+                <p class="card-text text-body-secondary flex-grow-1">Multiple-choice quiz with scoring and feedback.</p>
+                <button type="button" class="btn btn-outline-primary mt-3 w-100" data-bs-toggle="modal" data-bs-target="#projModal" data-title="Quiz App" data-desc="An interactive computer science quiz application featuring dynamic question randomization, immediate answer validation, and a comprehensive end-of-quiz score breakdown. Built with clean object-oriented JavaScript logic and instant visual feedback.">
+                  <i class="bi bi-eye me-1" aria-hidden="true"></i>View Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 project-card bg-body">
+              <img src="images/project6.svg" class="card-img-top" alt="Preview of Recipe Finder project">
+              <div class="card-body d-flex flex-column">
+                <div class="mb-2">
+                  <span class="badge bg-success-subtle text-success-emphasis">Bootstrap</span>
+                  <span class="badge bg-info-subtle text-info-emphasis">API</span>
+                </div>
+                <h3 class="card-title h5 fw-bold">Recipe Finder</h3>
+                <p class="card-text text-body-secondary flex-grow-1">Searchable recipe cards with filters.</p>
+                <button type="button" class="btn btn-outline-primary mt-3 w-100" data-bs-toggle="modal" data-bs-target="#projModal" data-title="Recipe Finder" data-desc="A culinary recipe exploration tool that enables users to discover meals based on ingredients, dietary preferences, and preparation time. Utilizes external recipe data feeds, Bootstrap card grids, modal ingredient breakdowns, and quick search filters.">
+                  <i class="bi bi-eye me-1" aria-hidden="true"></i>View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Experience & Education Section (#experience) -->
+    <section id="experience">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2 class="section-title">Experience &amp; Education</h2>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="accordion shadow-sm" id="expAccordion">
+              <!-- Item 1 (Open by default) -->
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="headingOne">
+                  <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <i class="bi bi-mortarboard me-2 text-primary" aria-hidden="true"></i>
+                    BCA, Sample University &nbsp;<span class="text-body-secondary fw-normal">(2023 to Present)</span>
+                  </button>
+                </h3>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#expAccordion">
+                  <div class="accordion-body">
+                    <p class="mb-0">Core subjects: programming, databases, web technologies.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <i class="bi bi-briefcase me-2 text-primary" aria-hidden="true"></i>
+                    Web Development Intern, Sample Tech Pvt. Ltd. &nbsp;<span class="text-body-secondary fw-normal">(2025)</span>
+                  </button>
+                </h3>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#expAccordion">
+                  <div class="accordion-body">
+                    <p class="mb-0">Built responsive pages and fixed UI bugs.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <i class="bi bi-book me-2 text-primary" aria-hidden="true"></i>
+                    Higher Secondary (Science), Sample College &nbsp;<span class="text-body-secondary fw-normal">(2021 to 2023)</span>
+                  </button>
+                </h3>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#expAccordion">
+                  <div class="accordion-body">
+                    <p class="mb-0">Computer Science stream.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 4 -->
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <i class="bi bi-trophy me-2 text-primary" aria-hidden="true"></i>
+                    Hackathon Participant &nbsp;<span class="text-body-secondary fw-normal">(2025)</span>
+                  </button>
+                </h3>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#expAccordion">
+                  <div class="accordion-body">
+                    <p class="mb-0">Built a prototype in 24 hours with a team of four.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Contact Section (#contact) -->
+    <section id="contact" class="bg-body-secondary">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="text-body-secondary">Feel free to reach out for collaborations, project inquiries, or simply to say hello.</p>
+        </div>
+        <div class="row g-4 align-items-start">
+          <!-- Contact Info -->
+          <div class="col-lg-5">
+            <div class="card border-0 shadow-sm p-4 bg-body h-100">
+              <h3 class="h4 fw-bold mb-3">Contact Information</h3>
+              <p class="text-body-secondary mb-4">I am actively looking for internship and entry-level front-end developer opportunities.</p>
+              
+              <div class="d-flex flex-column gap-3">
+                <a href="mailto:alex.morgan@example.com" class="d-flex align-items-center text-decoration-none text-body">
+                  <div class="btn btn-outline-primary rounded-circle me-3 d-flex align-items-center justify-content-center" style="width: 44px; height: 44px;">
+                    <i class="bi bi-envelope" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    <span class="text-body-secondary small d-block">Email</span>
+                    <strong>alex.morgan@example.com</strong>
+                  </div>
+                </a>
+
+                <a href="https://github.com/alexmorgan" target="_blank" rel="noopener noreferrer" class="d-flex align-items-center text-decoration-none text-body">
+                  <div class="btn btn-outline-primary rounded-circle me-3 d-flex align-items-center justify-content-center" style="width: 44px; height: 44px;">
+                    <i class="bi bi-github" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    <span class="text-body-secondary small d-block">GitHub</span>
+                    <strong>github.com/alexmorgan</strong>
+                  </div>
+                </a>
+
+                <a href="https://linkedin.com/in/alexmorgan" target="_blank" rel="noopener noreferrer" class="d-flex align-items-center text-decoration-none text-body">
+                  <div class="btn btn-outline-primary rounded-circle me-3 d-flex align-items-center justify-content-center" style="width: 44px; height: 44px;">
+                    <i class="bi bi-linkedin" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    <span class="text-body-secondary small d-block">LinkedIn</span>
+                    <strong>linkedin.com/in/alexmorgan</strong>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="col-lg-7">
+            <div class="card border-0 shadow-sm p-4 bg-body">
+              <h3 class="h4 fw-bold mb-3">Send a Message</h3>
+              <div id="formAlertContainer"></div>
+              <form id="contactForm" novalidate>
+                <div class="mb-3">
+                  <label for="contactName" class="form-label fw-semibold">Name</label>
+                  <input type="text" class="form-control" id="contactName" placeholder="Your Full Name" required>
+                  <div class="invalid-feedback">
+                    Please provide your name.
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="contactEmail" class="form-label fw-semibold">Email</label>
+                  <input type="email" class="form-control" id="contactEmail" placeholder="name@example.com" required>
+                  <div class="invalid-feedback">
+                    Please provide a valid email address.
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="contactSubject" class="form-label fw-semibold">Subject</label>
+                  <input type="text" class="form-control" id="contactSubject" placeholder="Inquiry about..." required>
+                  <div class="invalid-feedback">
+                    Please provide a subject.
+                  </div>
+                </div>
+
+                <div class="mb-4">
+                  <label for="contactMessage" class="form-label fw-semibold">Message</label>
+                  <textarea class="form-control" id="contactMessage" rows="5" placeholder="Write your message here..." required></textarea>
+                  <div class="invalid-feedback">
+                    Please enter your message before submitting.
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary px-4 py-2">
+                  <i class="bi bi-send-fill me-2" aria-hidden="true"></i>Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Reusable Single Modal for Projects (#projModal) -->
+  <div class="modal fade" id="projModal" tabindex="-1" aria-labelledby="projModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title h5" id="projModalLabel">Project Details</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-body-secondary leading-relaxed">
+          Project description details will load here.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-body-tertiary border-top py-4 text-center">
+    <div class="container">
+      <div class="d-flex justify-content-center gap-3 mb-3">
+        <a href="mailto:alex.morgan@example.com" class="btn btn-outline-secondary btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;" aria-label="Email Alex Morgan">
+          <i class="bi bi-envelope" aria-hidden="true"></i>
+        </a>
+        <a href="https://github.com/alexmorgan" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;" aria-label="GitHub profile">
+          <i class="bi bi-github" aria-hidden="true"></i>
+        </a>
+        <a href="https://linkedin.com/in/alexmorgan" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;" aria-label="LinkedIn profile">
+          <i class="bi bi-linkedin" aria-hidden="true"></i>
+        </a>
+      </div>
+      <p class="text-body-secondary mb-0 small">
+        &copy; <span id="currentYear"></span> Alex Morgan. All rights reserved. Built with Bootstrap 5.3.3.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Floating Edit Mode & Save HTML Controls -->
+  <div class="floating-controls d-flex flex-column gap-2" id="floatingControls">
+    <button id="toggleEditBtn" class="btn btn-primary rounded-circle shadow-lg floating-btn" type="button" aria-label="Toggle Edit Mode" title="Toggle Edit Mode">
+      <i class="bi bi-pencil" aria-hidden="true"></i>
+    </button>
+    <button id="saveHtmlBtn" class="btn btn-secondary rounded-circle shadow-lg floating-btn" type="button" aria-label="Save HTML" title="Save HTML">
+      <i class="bi bi-download" aria-hidden="true"></i>
+    </button>
+  </div>
+
+  <!-- Bootstrap 5.3.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom Script -->
+  <script src="js/script.js"></script>
+</body>
+</html>
